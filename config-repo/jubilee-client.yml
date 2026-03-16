@@ -1,0 +1,31 @@
+jubilee:
+  api:
+    base-url: "https://uat-jubipay.jubileeinsurance.com"
+
+    # Auth Endpoint
+    signin-url: "/api/auth/signin"
+    username: "kevin@foresighttlc.com"
+    password: "0Qwv#4@&^7k%J@m9!"
+
+    # GET Requests
+    active-schemes-url: "/da/scheme/all-active-schemes/KENYA"
+    pending-payroll-url: "/da/idd/pending-payroll/KENYA"
+    idd-exception-report-url: "/da/idd/exception-report/KENYA"
+    idd-member-setup-url: "/da/idd/get-idd-member-setup/KENYA"
+    batch-numbers-url: "/da/idd/batch-no/KENYA"
+    idd-batch-pending-processing-url: "/da/commissions/batch-numbers-pending-payments/KENYA"
+
+    # POST Requests (With Request Bodies)
+    idd-withdrawal-approve-url: "/da/idd/approve-idd-withdrawal/KENYA"
+    idd-withdrawal-reject-url: "/da/idd/reject-idd-withdrawal/KENYA"
+    batch-approve-url: "/da/idd/approve-batch/KENYA"
+    batch-reject-url: "/da/idd/reject-batch/KENYA"
+    commissions-list-url: "/da/commissions/comm-payments-list/KENYA"
+    commissions-reject-list-url: "/da/commissions/comm-payments/reject/KENYA"
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.jubilee.config.jubileeservice: DEBUG
+    org.springframework.web.reactive.function.client.WebClient: WARN
