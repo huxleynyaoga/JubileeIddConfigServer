@@ -14,6 +14,8 @@ jubilee:
     idd-member-setup-url: "/da/idd/get-idd-member-setup/KENYA"
     batch-numbers-url: "/da/idd/batch-no/KENYA"
     idd-batch-pending-processing-url: "/da/commissions/batch-numbers-pending-payments/KENYA"
+    scheme-companies-url: "/da/company/companies/KENYA"
+    member-information-url: "/da/members/member-information/KENYA"
 
     # POST Requests (With Request Bodies)
     idd-withdrawal-approve-url: "/da/idd/approve-idd-withdrawal/KENYA"
@@ -22,6 +24,22 @@ jubilee:
     batch-reject-url: "/da/idd/reject-batch/KENYA"
     commissions-list-url: "/da/commissions/comm-payments-list/KENYA"
     commissions-reject-list-url: "/da/commissions/comm-payments/reject/KENYA"
+
+spring:
+  datasource:
+    # Added jdbc:oracle:thin:@ and port/SID (usually 1521/ORCL or RDS name)
+    url: jdbc:oracle:thin:@jubilee-life-workflow-devdb.cb0uq8gamqf7.eu-west-1.rds.amazonaws.com:1521:DEVDB
+    username: jubileedev3
+    password: jubileedev3
+    driver-class-name: oracle.jdbc.OracleDriver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+##        dialect: org.hibernate.dialect.OracleDialect
+#        # This keeps table names exactly like "BATCHES_TEMP" without making them lowercase
+#        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 # Logging
 logging:
