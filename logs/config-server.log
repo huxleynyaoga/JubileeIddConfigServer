@@ -1,40 +1,50 @@
-2026-03-12 14:46:54.660 [main] INFO  c.j.c.c.ConfigServerApplicationTests - Starting ConfigServerApplicationTests using Java 17.0.12 with PID 18220 (started by Administrator in D:\Jubilee\config-server)
-2026-03-12 14:46:54.666 [main] INFO  c.j.c.c.ConfigServerApplicationTests - The following 1 profile is active: "native"
-2026-03-12 14:46:54.892 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
-2026-03-12 14:46:55.372 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=76c8caca-ec40-36c0-8812-4d52aa2de636
-2026-03-12 14:46:56.322 [main] INFO  c.j.c.c.ConfigServerApplicationTests - Started ConfigServerApplicationTests in 2.16 seconds (process running for 3.319)
-2026-03-12 14:47:18.540 [main] INFO  c.j.c.c.ConfigServerApplication - Starting ConfigServerApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 7200 (D:\Jubilee\config-server\target\config-server-0.0.1-SNAPSHOT.jar started by Administrator in D:\Jubilee\config-server)
-2026-03-12 14:47:18.540 [main] DEBUG c.j.c.c.ConfigServerApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
-2026-03-12 14:47:18.540 [main] INFO  c.j.c.c.ConfigServerApplication - The following 1 profile is active: "native"
-2026-03-12 14:47:18.796 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
-2026-03-12 14:47:19.395 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=f49cb6db-ffe6-39c2-bcf3-f922b3a98531
-2026-03-12 14:47:19.755 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
-2026-03-12 14:47:19.764 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2026-03-12 14:47:19.768 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-03-12 14:47:19.770 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
-2026-03-12 14:47:19.810 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1207 ms
-2026-03-12 14:47:20.604 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2026-03-12 14:47:20.630 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
-2026-03-12 14:47:20.726 [main] INFO  c.j.c.c.ConfigServerApplication - Started ConfigServerApplication in 3.248 seconds (process running for 3.803)
-2026-03-12 14:47:38.811 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-12 14:47:38.811 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-03-12 14:47:38.813 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2026-03-12 14:47:39.236 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 14:47:39.292 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 15:01:15.275 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 15:01:31.976 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 15:01:32.023 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 15:42:00.463 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 15:42:37.490 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 15:42:37.646 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 16:16:16.501 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 16:16:42.366 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 16:16:42.414 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 16:34:52.403 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 16:35:50.649 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 16:35:50.704 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 17:00:54.833 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 17:01:24.791 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 17:01:24.921 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
-2026-03-12 18:24:26.545 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-03-12 18:24:26.960 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-23 15:15:25.435 [main] INFO  c.j.c.c.ConfigServerApplicationTests - Starting ConfigServerApplicationTests using Java 17.0.12 with PID 22988 (started by Administrator in D:\Jubilee\config-server)
+2026-03-23 15:15:25.450 [main] INFO  c.j.c.c.ConfigServerApplicationTests - The following 1 profile is active: "native"
+2026-03-23 15:15:26.255 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-23 15:15:27.388 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=76c8caca-ec40-36c0-8812-4d52aa2de636
+2026-03-23 15:15:30.693 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-03-23 15:15:31.225 [main] INFO  c.j.c.c.ConfigServerApplicationTests - Started ConfigServerApplicationTests in 8.204 seconds (process running for 11.441)
+2026-03-23 15:16:57.274 [main] INFO  c.j.c.c.ConfigServerApplication - Starting ConfigServerApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 17596 (D:\Jubilee\config-server\target\config-server-0.0.1-SNAPSHOT.jar started by Administrator in D:\Jubilee\config-server)
+2026-03-23 15:16:57.282 [main] DEBUG c.j.c.c.ConfigServerApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-03-23 15:16:57.285 [main] INFO  c.j.c.c.ConfigServerApplication - The following 1 profile is active: "native"
+2026-03-23 15:16:58.027 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-23 15:16:59.653 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=f49cb6db-ffe6-39c2-bcf3-f922b3a98531
+2026-03-23 15:17:00.661 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2026-03-23 15:17:00.686 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2026-03-23 15:17:00.692 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-23 15:17:00.693 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-23 15:17:00.853 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3364 ms
+2026-03-23 15:17:03.601 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-03-23 15:17:04.159 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2026-03-23 15:17:04.229 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2026-03-23 15:17:05.515 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2026-03-23 15:17:05.559 [main] INFO  c.j.c.c.ConfigServerApplication - Started ConfigServerApplication in 12.447 seconds (process running for 14.113)
+2026-03-23 15:17:31.166 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23 15:17:31.167 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-23 15:17:31.172 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-03-23 15:17:32.373 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
+2026-03-23 15:17:32.558 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
+2026-03-23 15:26:39.690 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
+2026-03-23 15:26:39.828 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
+2026-03-23 16:02:16.231 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-23 16:02:16.667 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-23 16:02:27.837 [main] INFO  c.j.c.c.ConfigServerApplication - Starting ConfigServerApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 23244 (D:\Jubilee\config-server\target\config-server-0.0.1-SNAPSHOT.jar started by Administrator in D:\Jubilee\config-server)
+2026-03-23 16:02:27.842 [main] DEBUG c.j.c.c.ConfigServerApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-03-23 16:02:27.853 [main] INFO  c.j.c.c.ConfigServerApplication - The following 1 profile is active: "native"
+2026-03-23 16:02:28.694 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-03-23 16:02:30.300 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=f49cb6db-ffe6-39c2-bcf3-f922b3a98531
+2026-03-23 16:02:31.210 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8888 (http)
+2026-03-23 16:02:31.238 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2026-03-23 16:02:31.242 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-23 16:02:31.243 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-23 16:02:31.341 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3275 ms
+2026-03-23 16:02:33.422 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2026-03-23 16:02:33.507 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8888 (http) with context path '/'
+2026-03-23 16:02:33.779 [main] INFO  c.j.c.c.ConfigServerApplication - Started ConfigServerApplication in 9.025 seconds (process running for 10.589)
+2026-03-23 16:03:16.549 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23 16:03:16.551 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-23 16:03:16.557 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-03-23 16:03:17.566 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
+2026-03-23 16:03:17.721 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [D:\Jubilee\config-server\config-repo\jubilee-client.yml]' via location 'file:///D:/Jubilee/config-server/config-repo/'
+2026-03-23 16:10:54.413 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-23 16:10:55.155 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
