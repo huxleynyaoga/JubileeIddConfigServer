@@ -7,7 +7,8 @@ jubilee:
     username: "kevin@foresighttlc.com"
     password: "0Qwv#4@&^7k%J@m9!"
 
-    # GET Requests
+    #IDD
+                # GET Requests
     active-schemes-url: "/da/scheme/all-active-schemes/KENYA"
     pending-payroll-url: "/da/idd/pending-payroll/KENYA"
     idd-exception-report-url: "/da/idd/exception-report/KENYA"
@@ -17,13 +18,36 @@ jubilee:
     scheme-companies-url: "/da/company/companies/KENYA"
     member-information-url: "/da/members/member-information/KENYA"
 
-    # POST Requests (With Request Bodies)
+                  # POST Requests (With Request Bodies)
     idd-withdrawal-approve-url: "/da/idd/approve-idd-withdrawal/KENYA"
     idd-withdrawal-reject-url: "/da/idd/reject-idd-withdrawal/KENYA"
     batch-approve-url: "/da/idd/approve-batch/KENYA"
     batch-reject-url: "/da/idd/reject-batch/KENYA"
     commissions-list-url: "/da/commissions/comm-payments-list/KENYA"
     commissions-reject-list-url: "/da/commissions/comm-payments/reject/KENYA"
+
+
+    # COMMISSIONS
+                  # Get Requests
+    commissions-by-receipt-url: "/da/commissions/KENYA"
+    commissions-pending-batch-nos-url: "/da/commissions/pending-batch-nos/KENYA"
+    batch-agent-listing-url: "/da/commissions/batch-agent-listing/KENYA"
+    commissions-approval-list-url: "/da/commissions/approval-list/KENYA"
+    commissions-reversal-list-url: "/da/commissions/reversal/KENYA"
+    commissions-batch-pending-payments-url: "/da/commissions/batch-numbers-pending-payments/KENYA"
+    commissions-receipts-per-batch-url: "/da/commissions/rpt/receipts-per-batch/KENYA"
+    commissions-vouchers-per-batch-url: "/da/commissions/rpt/vouchers-per-batch/KENYA"
+    commissions-exception-report-url: "/da/commissions/exception-report/KENYA"
+    intermediaries-all-url: "/da/intermediary/all/KENYA"
+
+                  # Post Requests (With Request Bodies)
+    commissions-process-url: "/da/commissions/process/KENYA"
+    commissions-approve-url: "/da/commissions/approve/KENYA"
+    commissions-reverse-url: "/da/commissions/reverse/KENYA"
+    commissions-reject-url: "/da/commissions/reject/KENYA"
+    commissions-payments-pending-approval-url: "/da/commissions/comm-payments-list/KENYA"
+    commissions-payments-reject-reverse-url: "/da/commissions/comm-payments/reject/KENYA"
+
 
 spring:
   datasource:
