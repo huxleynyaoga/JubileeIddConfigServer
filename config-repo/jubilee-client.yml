@@ -18,6 +18,7 @@ jubilee:
     scheme-companies-url: "/da/company/companies/KENYA"
     member-information-url: "/da/members/member-information/KENYA"
     user-email: "/da/users/by-email/KENYA"
+    members-list: "/da/members/KENYA"
 
                   # POST Requests (With Request Bodies)
     idd-withdrawal-approve-url: "/da/idd/approve-idd-withdrawal/KENYA"
