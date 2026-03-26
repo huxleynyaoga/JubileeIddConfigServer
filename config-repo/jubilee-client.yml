@@ -17,6 +17,7 @@ jubilee:
     idd-batch-pending-processing-url: "/da/commissions/batch-numbers-pending-payments/KENYA"
     scheme-companies-url: "/da/company/companies/KENYA"
     member-information-url: "/da/members/member-information/KENYA"
+    user-email: "/da/users/by-email/KENYA"
 
                   # POST Requests (With Request Bodies)
     idd-withdrawal-approve-url: "/da/idd/approve-idd-withdrawal/KENYA"
