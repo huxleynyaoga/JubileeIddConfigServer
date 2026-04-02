@@ -19,6 +19,7 @@ jubilee:
     member-information-url: "/da/members/member-information/KENYA"
     user-email: "/da/users/by-email/KENYA"
     members-list: "/da/members/KENYA"
+    bank-details: "/da/payments/bank-details/KENYA"
 
                   # POST Requests (With Request Bodies)
     idd-withdrawal-approve-url: "/da/idd/approve-idd-withdrawal/KENYA"
@@ -58,14 +59,15 @@ spring:
     username: jubileedev3
     password: jubileedev3
     driver-class-name: oracle.jdbc.OracleDriver
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    properties:
-#      hibernate:
-##        dialect: org.hibernate.dialect.OracleDialect
-#        # This keeps table names exactly like "BATCHES_TEMP" without making them lowercase
-#        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        # Force Hibernate to use the EXACT names defined in @Table and @Column
+        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        # This helps Hibernate understand Oracle 19c specific syntax
+        dialect: org.hibernate.dialect.OracleDialect
 
 # Logging
 logging:
