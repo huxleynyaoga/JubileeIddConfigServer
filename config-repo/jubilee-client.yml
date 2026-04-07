@@ -52,10 +52,23 @@ jubilee:
     commissions-payments-reject-reverse-url: "/da/commissions/comm-payments/reject/KENYA"
 
 
+# --- UPLOAD TO OMNIDOCS ---
+omnidocs:
+  base-url: "http://localhost:9996"
+  upload-endpoint: "api/v1/upload/"
+  auth:
+    username: "admin"
+    password: "secure_password"
+  max:
+    concurrent-uploads: 3
+    retries: 3
+  connection-timeout: 60000
+  read-timeout: 60000
+
 spring:
   datasource:
     # Added jdbc:oracle:thin:@ and port/SID (usually 1521/ORCL or RDS name)
-    url: jdbc:oracle:thin:@jubilee-life-workflow-devdb.cb0uq8gamqf7.eu-west-1.rds.amazonaws.com:1521:DEVDB
+    url: jdbc:oracle:thin:@jubilee-life-workflow-devdb-2026-03-28-01-42-restored.cb0uq8gamqf7.eu-west-1.rds.amazonaws.com:1521:DEVDB
     username: jubileedev3
     password: jubileedev3
     driver-class-name: oracle.jdbc.OracleDriver
