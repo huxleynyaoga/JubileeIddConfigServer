@@ -1,5 +1,15 @@
 #!/bin/bash
+
+ENV=$1
+
+if [ -z "$ENV" ]; then
+  echo "Usage: ./start-config-server.sh <sit|uat|prod>"
+  exit 1
+fi
+
 JAVA_EXEC="/usr/java/jdk-17/bin/java"
+
+export SPRING_PROFILES_ACTIVE=$ENV
 
 export CONFIG_REPO_PATH="file:///u02/Domain/config-server/config-repo/"
 export CONFIG_USER="jubilee_admin"
@@ -10,9 +20,7 @@ export SERVER_PORT=8888
 export SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCHLOCATIONS="$CONFIG_REPO_PATH"
 
 echo "=========================================="
-echo "JUBILEE CONFIG SERVER STARTUP (SECURE)"
-echo "REPO: $CONFIG_REPO_PATH"
-echo "PORT: $SERVER_PORT"
+echo "STARTING CONFIG SERVER FOR ENV: $ENV"
 echo "=========================================="
 
 $JAVA_EXEC -jar target/config-server-0.0.1-SNAPSHOT.jar \

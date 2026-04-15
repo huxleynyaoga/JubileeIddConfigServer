@@ -1,0 +1,90 @@
+jubilee:
+  api:
+    base-url: "https://uat-jubipay.jubileeinsurance.com"
+
+    # Auth Endpoint
+    signin-url: "/api/auth/signin"
+    username: "kevin@foresighttlc.com"
+    password: "0Qwv#4@&^7k%J@m9!"
+
+    #IDD
+    # GET Requests
+    active-schemes-url: "/da/scheme/all-active-schemes/KENYA"
+    pending-payroll-url: "/da/idd/pending-payroll/KENYA"
+    idd-exception-report-url: "/da/idd/exception-report/KENYA"
+    idd-member-setup-url: "/da/idd/get-idd-member-setup/KENYA"
+    batch-numbers-url: "/da/idd/batch-no/KENYA"
+    idd-batch-pending-processing-url: "/da/commissions/batch-numbers-pending-payments/KENYA"
+    scheme-companies-url: "/da/company/companies/KENYA"
+    member-information-url: "/da/members/member-information/KENYA"
+    user-email: "/da/users/by-email/KENYA"
+    members-list: "/da/members/KENYA"
+    bank-details: "/da/payments/bank-details/KENYA"
+
+    # POST Requests (With Request Bodies)
+    idd-withdrawal-approve-url: "/da/idd/approve-idd-withdrawal/KENYA"
+    idd-withdrawal-reject-url: "/da/idd/reject-idd-withdrawal/KENYA"
+    batch-approve-url: "/da/idd/approve-batch/KENYA"
+    batch-reject-url: "/da/idd/reject-batch/KENYA"
+    commissions-list-url: "/da/commissions/comm-payments-list/KENYA"
+    commissions-reject-list-url: "/da/commissions/comm-payments/reject/KENYA"
+
+
+    # COMMISSIONS
+    # Get Requests
+    commissions-by-receipt-url: "/da/commissions/KENYA"
+    commissions-pending-batch-nos-url: "/da/commissions/pending-batch-nos/KENYA"
+    batch-agent-listing-url: "/da/commissions/batch-agent-listing/KENYA"
+    commissions-approval-list-url: "/da/commissions/approval-list/KENYA"
+    commissions-reversal-list-url: "/da/commissions/reversal/KENYA"
+    commissions-batch-pending-payments-url: "/da/commissions/batch-numbers-pending-payments/KENYA"
+    commissions-receipts-per-batch-url: "/da/commissions/rpt/receipts-per-batch/KENYA"
+    commissions-vouchers-per-batch-url: "/da/commissions/rpt/vouchers-per-batch/KENYA"
+    commissions-exception-report-url: "/da/commissions/exception-report/KENYA"
+    intermediaries-all-url: "/da/intermediary/all/KENYA"
+
+    # Post Requests (With Request Bodies)
+    commissions-process-url: "/da/commissions/process/KENYA"
+    commissions-approve-url: "/da/commissions/approve/KENYA"
+    commissions-reverse-url: "/da/commissions/reverse/KENYA"
+    commissions-reject-url: "/da/commissions/reject/KENYA"
+    commissions-payments-pending-approval-url: "/da/commissions/comm-payments-list/KENYA"
+    commissions-payments-reject-reverse-url: "/da/commissions/comm-payments/reject/KENYA"
+
+
+# --- UPLOAD TO OMNIDOCS ---
+omnidocs:
+  base-url: "http://localhost:9996"
+  upload-endpoint: "api/v1/upload/"
+  auth:
+    username: "admin"
+    password: "secure_password"
+  max:
+    concurrent-uploads: 3
+    retries: 3
+  connection-timeout: 60000
+  read-timeout: 60000
+
+spring:
+  datasource:
+    # Added jdbc:oracle:thin:@ and port/SID (usually 1521/ORCL or RDS name)
+    url: jdbc:oracle:thin:@jubilee-life-workflow-devdb-2026-03-28-01-42-restored.cb0uq8gamqf7.eu-west-1.rds.amazonaws.com:1521:DEVDB
+    username: jubileedev3
+    password: jubileedev3
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        # Force Hibernate to use the EXACT names defined in @Table and @Column
+        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        # This helps Hibernate understand Oracle 19c specific syntax
+        dialect: org.hibernate.dialect.OracleDialect
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.jubilee.config.jubileeservice: DEBUG
+    org.springframework.web.reactive.function.client.WebClient: WARN

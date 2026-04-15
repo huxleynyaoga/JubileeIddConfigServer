@@ -42,14 +42,20 @@ echo LOG LEVEL:        %APP_LOG_LEVEL%
 echo ==========================================
 echo.
 
-REM ========================================================================
-REM Start the Config Server
-REM ========================================================================
-echo Launching Config Server...
+set ENV=%1
+
+if "%ENV%"=="" (
+  echo Usage: start-config-server.bat ^<sit^|uat^|prod^>
+  exit /b 1
+)
+
+echo ==========================================
+echo STARTING CONFIG SERVER FOR ENV: %ENV%
+echo ==========================================
 
 REM Using 'java' instead of a hardcoded path so it uses your system's default Java
 java -jar target/config-server-0.0.1-SNAPSHOT.jar ^
-  --spring.profiles.active=native ^
+  --spring.profiles.active=native,%ENV% ^
   --spring.security.user.name=%CONFIG_USER% ^
   --spring.security.user.password=%CONFIG_PWD% ^
   --encrypt.key=%ENCRYPTION_KEY% ^
