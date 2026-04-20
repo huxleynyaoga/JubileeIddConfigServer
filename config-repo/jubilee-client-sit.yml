@@ -28,6 +28,7 @@ jubilee:
     batch-reject-url: "/da/idd/reject-batch/KENYA"
     commissions-list-url: "/da/commissions/comm-payments-list/KENYA"
     commissions-reject-list-url: "/da/commissions/comm-payments/reject/KENYA"
+    withdrawal-statement-url: "/da/statements/withdrawal-statement/KENYA"
 
 
       # COMMISSIONS
