@@ -1,11 +1,11 @@
 jubilee:
   api:
-    base-url: "https://uat-jubipay.jubileeinsurance.com"
+    base-url: "https://jubipay.jubileeinsurance.com"
 
     # Auth Endpoint
     signin-url: "/api/auth/signin"
-    username: "kevin@foresighttlc.com"
-    password: "0Qwv#4@&^7k%J@m9!"
+    username: "foresighttlc@jubileekenya.com"
+    password: "8K1lPqs26%j{/<yJ"
 
     #IDD
     # GET Requests
@@ -68,20 +68,26 @@ omnidocs:
 
 spring:
   datasource:
-    # Added jdbc:oracle:thin:@ and port/SID (usually 1521/ORCL or RDS name)
-    url: jdbc:oracle:thin:@jubilee-life-workflow-devdb-2026-03-28-01-42-restored.cb0uq8gamqf7.eu-west-1.rds.amazonaws.com:1521:DEVDB
-    username: jubileedev3
-    password: jubileedev3
+    url: jdbc:oracle:thin:@//jubilee-life-workflow-proddb1.c9sqi8igyeah.eu-west-1.rds.amazonaws.com:1521/wfprod
+    username: jubileewflow
+    password: '%$newJhlapex15@$$'
     driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 3
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
-        # Force Hibernate to use the EXACT names defined in @Table and @Column
-        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-        # This helps Hibernate understand Oracle 19c specific syntax
         dialect: org.hibernate.dialect.OracleDialect
+        format_sql: true
+        physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 # Logging
 logging:

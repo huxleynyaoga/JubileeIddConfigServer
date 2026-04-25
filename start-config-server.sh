@@ -9,8 +9,6 @@ fi
 
 JAVA_EXEC="/usr/java/jdk-17/bin/java"
 
-export SPRING_PROFILES_ACTIVE=$ENV
-
 export CONFIG_REPO_PATH="file:///u02/Domain/config-server/config-repo/"
 export CONFIG_USER="jubilee_admin"
 export CONFIG_PWD="secret123"
@@ -24,7 +22,7 @@ echo "STARTING CONFIG SERVER FOR ENV: $ENV"
 echo "=========================================="
 
 $JAVA_EXEC -jar target/config-server-0.0.1-SNAPSHOT.jar \
-  --spring.profiles.active=native \
+  --spring.profiles.active=native,$ENV \
   --encrypt.key="$ENCRYPTION_KEY" \
   --server.port="$SERVER_PORT" \
   --logging.level.root=INFO \
